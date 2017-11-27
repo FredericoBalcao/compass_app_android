@@ -1,0 +1,273 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name=".Bussola.MainActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:label="Bussola"
+    android:orientation="vertical"
+    tools:layout="@layout/activity_main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textSize="36dp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_alignBottom="@+id/txtTemp"
+                                android:layout_alignEnd="@+id/txtDescription"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignRight="@+id/txtDescription"
+                                android:layout_below="@+id/txtCity"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:src="@drawable/image" />
+
+                            <TextView
+                                android:id="@+id/txtDescription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/txtTemp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="TextView"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtTemp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/txtTempMin"
+
+                            android:layout_toEndOf="@+id/imageView"
+                            android:layout_toRightOf="@+id/imageView"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="TextView"
+
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtTempMax"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="0.45"
+                                    android:text="TextView"
+                                    android:textAlignment="center"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/txtTempMin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="0.45"
+                                    android:text="TextView"
+                                    android:textAlignment="center"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtTimeSunrise"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="46dp"
+                                    android:text="TextView"
+                                    android:textAlignment="center"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/txtTimeSunset"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="46dp"
+                                    android:text="TextView"
+                                    android:textAlignment="center"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageViewCompass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/buttonDestino"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/txtDescription"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:adjustViewBounds="false"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img" />
+
+                            <ImageView
+                                android:id="@+id/imageViewSeta"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/buttonDestino"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/txtDescription"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:adjustViewBounds="false"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/arrow" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtViewDistancia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonDestino"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+
+
+                        android:text="Definir Destino"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>
